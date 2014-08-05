@@ -1,0 +1,1 @@
+/home/vagrant/sites/openlogix/app/views/addresses/create.blade.php

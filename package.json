@@ -1,0 +1,22 @@
+{
+  "name": "openlogix",
+  "version": "0.0.0",
+  "description": "Example App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-concat": "^2.3.4",
+    "gulp-ruby-sass": "^0.7.1",
+    "main-bower-files": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp-bower-files": "^0.2.7",
+    "gulp-filter": "^1.0.0",
+    "gulp-ng-annotate": "^0.3.0",
+    "gulp-uglify": "^0.3.1"
+  }
+}

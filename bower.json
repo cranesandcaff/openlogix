@@ -1,0 +1,23 @@
+{
+  "name": "openlogix",
+  "version": "0.0.0",
+  "authors": [
+    "Patrick Cauley <patrick@cranesandcaffeine.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-resource": "~1.2.21",
+    "angular-route": "~1.2.21",
+    "bootstrap-sass-official": "~3.2.0+1",
+    "bootstrap-ui": "~0.11.0",
+    "angular-bootstrap": "~0.11.0"
+  }
+}
