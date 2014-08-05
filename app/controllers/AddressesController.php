@@ -1,6 +1,6 @@
 <?php
 
-class AddressesController extends \BaseController {
+class AddressesController extends BaseController {
 
 	/**
 	 * Display a listing of addresses
@@ -80,15 +80,15 @@ class AddressesController extends \BaseController {
 		$address = Address::findOrFail($id);
 
 		$validator = Validator::make($data = Input::all(), Address::$rules);
-
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
+		// 
+		// if ($validator->fails())
+		// {
+		//  return Response::json(array('type' => 'error', 'message' => 'Error storing parking spot'), 500);
+		// }
 
 		$address->update($data);
 
-		return Redirect::route('addresses.index');
+		return Response::json($data);
 	}
 
 	/**

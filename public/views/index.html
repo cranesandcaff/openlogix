@@ -10,12 +10,22 @@
         <tr>
           <th>Address</th>
           <th>Number of Parking Spots at address</th>
+          <th>
+            Spots Reserved
+          </th>
+          <th>
+            Reserve Spot
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr ng-repeat="address in addresses">
           <td ng-bind="address.address"></td>
           <td ng-bind="address.spots"></td>
+          <td ng-bind="address.reserved"></td>
+          <td>
+            <button class="btn btn-success" ng-click="reserveSpot(address)">Reserve Spot</button>
+          </td>
         </tr>
       </tbody>
     </table>
